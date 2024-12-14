@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASA Image and Video Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>NASA Image and Video Gallery</h1>
+    </div>
+    
+  <div class="container">
+  
+
+    <!-- Dropdown for selecting query -->
+    <div class="dropdown">
+      <label for="querySelection">Select Category:</label>
+      <select id="querySelection">
+        <option value="moon">Moon</option>
+        <option value="mars">Mars</option>
+        <option value="earth">Earth</option>
+        <option value="galaxy">Galaxy</option>
+      </select>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader"></div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="gallery"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

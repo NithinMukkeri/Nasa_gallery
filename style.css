@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #f0f6fc;
+}
+.header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   
+  }
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  
+  .dropdown {
+    margin: 20px 0;
+  }
+  
+  
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Centering the Dropdown and Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+/* Dropdown (Selection) Styling */
+select {
+    padding: 12px;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #f0f8ff;
+}
+
+/* Style for the dropdown label */
+label {
+    font-size: 1.2rem;
+    color: black;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Loader Styles */
+.loader {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border: 8px solid rgba(255, 255, 255, 0.2);
+    border-top: 8px solid #007BFF;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+.gallery-item {
+    position: relative;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 40px;
+    padding: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 3px 3px rgb(218, 209, 209);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    border: 2px solid blue;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item img, .gallery-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.gallery-item .info {
+    padding: 10px;
+}
+
+.gallery-item .info h3 {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: black;
+}
+
+.gallery-item .info p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+.gallery-item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover:after {
+    opacity: 1;
+}
+
+/* Centering and Styling for the Selection */
+.select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.select-container select {
+    width: 50%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-container select:focus {
+    outline: none;
+    border-color: #007BFF;
+    background-color: #f0f8ff;
+}
+
+.select-container label {
+    font-size: 1.2rem;
+    color: black;
+    margin-right: 10px;
+    font-weight: bold;
+}
